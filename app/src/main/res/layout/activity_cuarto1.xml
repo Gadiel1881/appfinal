@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvsaludo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOLA GADIEL CASTILLO"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@mipmap/markey" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EN TU CASA HAY:"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Selecciona habitacion"
+                    android:background="#D582B1FF"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#5182B1FF"
+                    android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbsala"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sala" />
+
+                    <RadioButton
+                        android:id="@+id/rbcomedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Comedor"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
+
+                    <RadioButton
+                        android:id="@+id/rbcocina"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cocina" />
+                    <RadioButton
+                        android:id="@+id/rblavanderia"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lavanderia" />
+
+                        <RadioButton
+                            android:id="@+id/rbescalera"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_height="wrap_content"
+                            android:text="Escalera Pasillo" />
+
+                        <RadioButton
+                            android:id="@+id/rbcprincipal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Cuarto principal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                        <RadioButton
+                            android:id="@+id/rbcniños"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_height="wrap_content"
+                            android:text="Cuarto niños" />
+                        <RadioButton
+                            android:id="@+id/rbbaño"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_height="wrap_content"
+                            android:text="Baño" />
+
+                    </RadioGroup>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/btndatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/boton"
+                        android:textSize="18sp"
+                        android:text="Datos habitacion"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btncsesion"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/boton"
+                    android:textSize="18sp"
+                    android:text="Cerrar sesion" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

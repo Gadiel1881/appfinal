@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesión"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/markey" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:backgroundTint="#7AD6E4FA"
+            android:background="@drawable/color">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/etnombre"
+                android:textColorHint="#AAAAAA"
+                android:textSize="20sp"
+                android:backgroundTint="#7AD6E4FA"
+                android:inputType="textPersonName"
+                android:hint="Usuario"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etcontraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="number"
+                android:backgroundTint="#7AD6E4FA"
+                android:password="true"
+                android:textColorHint="#AAAAAA"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cbcontraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:password="false"
+            android:phoneNumber="false"
+            android:text="Mostrar contraseña"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/btnisesion"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesion"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/boton"
+            android:textSize="18sp"
+            /> />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvregistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:autoText="false"
+            android:text="Crear cuenta"
+            android:textColor="#3454FF"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+</LinearLayout>
